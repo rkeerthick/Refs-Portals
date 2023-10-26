@@ -9,8 +9,8 @@ const TimerChallege = ({ title, targetTime }) => {
   const handleStart = () => {
     setTimerStarted(true);
     timer.current = setTimeout(() => {
-        setTimerExpired(true);
-        dialog.current.showModal();
+      setTimerExpired(true);
+      dialog.current.showModal();
     }, targetTime * 1000);
   };
   const handleStop = () => {
